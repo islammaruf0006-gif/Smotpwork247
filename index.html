@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#020611">
+<title>SM OTP WORK | Official Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#020611;--card:#071528cc;--cyan:#00eaff;--blue:#008cff;--text:#f4fbff;--muted:#91a8bd;--line:#00cfff33}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{background:radial-gradient(circle at 20% 10%,#008cff22,transparent 30%),radial-gradient(circle at 80% 30%,#00eaff18,transparent 28%),linear-gradient(135deg,#01040a,#020914 50%,#01050c);color:var(--text);font-family:'Noto Sans Bengali',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:linear-gradient(#00aaff22 1px,transparent 1px),linear-gradient(90deg,#00aaff22 1px,transparent 1px);background-size:50px 50px}
+nav{height:74px;position:fixed;z-index:99;inset:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 7%;background:#020711cc;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.logo{font:800 20px Orbitron;letter-spacing:2px;text-shadow:0 0 18px #00cfff99}.logo b{color:var(--cyan)}
+nav ul{display:flex;gap:25px;list-style:none}nav a{color:#a9c1d4;text-decoration:none;font:600 17px Rajdhani;transition:.3s}nav a:hover{color:#fff;text-shadow:0 0 15px var(--cyan)}
+.navbtn{border:1px solid var(--cyan);padding:9px 17px;border-radius:8px;color:#fff!important}
+.hero{min-height:100vh;padding:145px 7% 80px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
+.hero>div{max-width:950px}.status{display:inline-flex;gap:9px;align-items:center;border:1px solid #00eaff44;background:#00aaff0d;border-radius:99px;padding:8px 16px;color:#9eeeff;font:600 16px Rajdhani;margin-bottom:25px}.dot{width:8px;height:8px;border-radius:50%;background:#00ffb3;box-shadow:0 0 14px #00ffb3}
+h1{font:900 clamp(40px,7vw,86px)/1.05 Orbitron;letter-spacing:2px;background:linear-gradient(90deg,#fff,#8cecff,#00aaff,#fff);background-size:250%;-webkit-background-clip:text;color:transparent;animation:shine 6s linear infinite}@keyframes shine{to{background-position:250%}}
+.hero h2{font:700 clamp(20px,3vw,30px) Rajdhani;color:#a9d9ec;margin:20px 0 14px}.hero p,.section-title p{color:var(--muted);line-height:1.9}.hero p{max-width:720px;margin:auto}
+.buttons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:32px}.btn{min-width:175px;padding:14px 23px;border-radius:10px;text-decoration:none;font:700 18px Rajdhani;transition:.3s}.primary{color:#001019;background:linear-gradient(135deg,var(--cyan),var(--blue));box-shadow:0 0 28px #00b4ff47}.outline{color:#dffaff;border:1px solid #00dcff77;background:#00a0ff0d}.btn:hover{transform:translateY(-4px);box-shadow:0 0 38px #00dcff66}
+section{padding:95px 7%;position:relative}.section-title{text-align:center;margin-bottom:50px}.section-title small{color:var(--cyan);font:700 16px Rajdhani;letter-spacing:3px}.section-title h2{font:800 clamp(28px,4vw,45px) Orbitron;margin-top:9px}
+.grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.glass{background:linear-gradient(145deg,#0b1c32c2,#030c19aa);border:1px solid var(--line);border-radius:18px;padding:29px;box-shadow:0 0 30px #00aeff20;backdrop-filter:blur(12px);transition:.35s}.glass:hover{transform:translateY(-7px);border-color:#00dcff70}
+.about{grid-template-columns:1fr 1fr}.glass h3{font:700 24px Rajdhani;margin-bottom:10px}.glass p{color:#92a9bb;line-height:1.9}.icon{width:58px;height:58px;display:grid;place-items:center;border-radius:15px;background:#00b5ff0f;border:1px solid #00cdff40;font-size:26px;margin-bottom:18px}
+.country{text-align:center;padding:26px}.flag{font-size:40px;margin-bottom:8px}.country h3{margin:0;font-size:21px}.country p{font-size:14px}
+.system{max-width:1000px;margin:auto;text-align:center;padding:55px 30px;background:linear-gradient(135deg,#0096ff1c,#00142d8c);border:1px solid #00beff40;border-radius:25px;box-shadow:0 0 70px #0082ff1f}.system h2{font:800 clamp(28px,5vw,50px) Orbitron;margin-bottom:15px}.system h2 span{color:var(--cyan)}.points{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.point{padding:9px 16px;border:1px solid #00d2ff33;border-radius:99px;color:#aeefff;background:#00a0ff0f;font:600 16px Rajdhani}
+.step{text-align:center}.num{width:65px;height:65px;display:grid;place-items:center;margin:0 auto 18px;border-radius:50%;border:1px solid var(--cyan);color:var(--cyan);font:700 19px Orbitron}
+.contact{text-align:center}.contact .icon{margin:0 auto 14px}.contact a{color:#76dfff;text-decoration:none;font:600 17px Rajdhani;word-break:break-word}.contact a:hover{text-shadow:0 0 15px var(--cyan)}
+.cta{text-align:center;padding:90px 7%}.cta h2{font:800 clamp(29px,5vw,52px) Orbitron;margin-bottom:15px}.cta p{max-width:650px;margin:auto;color:var(--muted);line-height:1.8}
+footer{text-align:center;padding:35px 7%;border-top:1px solid var(--line);background:#00040ccc}footer strong{font:800 18px Orbitron;letter-spacing:2px}footer strong span{color:var(--cyan)}footer p{color:#61788b;font-size:14px;margin-top:12px}.flinks{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:15px}.flinks a{font:600 16px Rajdhani}
+@media(max-width:850px){nav{padding:0 5%}nav ul{display:none}.hero{padding:125px 5% 65px}section{padding:75px 5%}.grid,.about{grid-template-columns:1fr}.country{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.logo{font-size:15px}.navbtn{padding:8px 12px;font-size:14px}.hero h1{font-size:39px}.hero p{font-size:14px}.country{grid-template-columns:1fr}.btn{width:100%}.buttons{padding:0 8px}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">SM <b>OTP</b> WORK</div>
+<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#features">Features</a></li><li><a href="#system">System</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="navbtn" href="https://t.me/SM_OTP_WORK_bot" target="_blank" rel="noopener">OPEN BOT</a>
+</nav>
+
+<header class="hero" id="home"><div>
+<div class="status"><span class="dot"></span>SYSTEM ONLINE</div>
+<h1>SM OTP WORK</h1>
+<h2>⚡ WORK SMART • WORK FAST • WORK BETTER ⚡</h2>
+<p>Welcome to the official SM OTP WORK platform. একটি আধুনিক Telegram-based work platform যেখানে সহজ interface, updated system এবং organized workflow-এর মাধ্যমে কাজকে আরও convenient করার লক্ষ্য রাখা হয়েছে।</p>
+<div class="buttons">
+<a class="btn primary" href="https://t.me/SM_OTP_WORK_bot" target="_blank" rel="noopener">🤖 START BOT</a>
+<a class="btn outline" href="https://t.me/mmteme247open" target="_blank" rel="noopener">📢 OFFICIAL CHANNEL</a>
+</div></div></header>
+
+<section id="about"><div class="section-title"><small>WHO WE ARE</small><h2>About SM OTP WORK</h2><p>একটি clean, organized এবং user-friendly work environment তৈরি করাই আমাদের লক্ষ্য।</p></div>
+<div class="grid about"><div class="glass"><h3>🚀 আমাদের সম্পর্কে</h3><p>SM OTP WORK একটি Telegram-based work platform। আমাদের system সময়ের সাথে update ও improve করার লক্ষ্য নিয়ে তৈরি করা হয়েছে, যাতে users সহজভাবে available workflow এবং system-related information বুঝতে পারে।</p></div><div class="glass"><h3>⚡ আমাদের লক্ষ্য</h3><p>Better system, faster workflow এবং সুন্দর user experience—এই বিষয়গুলোকে সামনে রেখে SM OTP WORK platform-কে আরও উন্নত করার লক্ষ্য আমাদের।</p></div></div></section>
+
+<section id="features"><div class="section-title"><small>WHY SM OTP WORK</small><h2>Platform Features</h2><p>Modern work platform-এর গুরুত্বপূর্ণ বিষয়গুলো simple এবং accessible রাখার চেষ্টা করা হয়েছে।</p></div>
+<div class="grid">
+<div class="glass"><div class="icon">🤖</div><h3>Telegram Based</h3><p>Telegram-এর মাধ্যমে platform-এর সাথে connect করা যায় এবং available workflow অনুসরণ করা যায়।</p></div>
+<div class="glass"><div class="icon">⚡</div><h3>Fast Workflow</h3><p>Simple interface এবং organized process-এর মাধ্যমে workflow দ্রুত ও সহজ রাখার চেষ্টা করা হয়েছে।</p></div>
+<div class="glass"><div class="icon">🔄</div><h3>Updated System</h3><p>নতুন features, improvements এবং প্রয়োজন অনুযায়ী system update করার পরিকল্পনা রয়েছে।</p></div>
+<div class="glass"><div class="icon">🌍</div><h3>Multiple Work Areas</h3><p>বিভিন্ন country ও work category নিয়ে platform-এর workflow পরিচালিত হতে পারে।</p></div>
+<div class="glass"><div class="icon">📢</div><h3>Official Updates</h3><p>গুরুত্বপূর্ণ announcement এবং update-এর জন্য official Telegram channel follow করতে পারো।</p></div>
+<div class="glass"><div class="icon">🛠️</div><h3>Support</h3><p>প্রয়োজনে listed Telegram support contacts-এর মাধ্যমে যোগাযোগ করতে পারো।</p></div>
+</div></section>
+
+<section><div class="section-title"><small>WORK AREAS</small><h2>Our Work Network</h2><p>আমাদের work discussions-এ বিভিন্ন country-based work-এর কথা এসেছে।</p></div>
+<div class="grid" style="grid-template-columns:repeat(3,1fr)">
+<div class="glass country"><div class="flag">🇮🇩</div><h3>Indonesia</h3><p>Country Work</p></div>
+<div class="glass country"><div class="flag">🇩🇿</div><h3>Algeria</h3><p>Country Work</p></div>
+<div class="glass country"><div class="flag">🇱🇰</div><h3>Sri Lanka</h3><p>Country Work</p></div>
+</div></section>
+
+<section id="system"><div class="system"><h2>NEW SYSTEM <span>UPDATED</span></h2><p>আরও organized এবং improved experience দেওয়ার জন্য system update ও improvement-এর দিকে গুরুত্ব দেওয়া হচ্ছে। নতুন changes ও important announcements official channel-এ প্রকাশ করা হবে।</p><div class="points"><span class="point">⚡ Faster Workflow</span><span class="point">🔄 System Update</span><span class="point">🛠️ Improvements</span><span class="point">📢 Regular Updates</span><span class="point">🚀 Better Experience</span></div></div></section>
+
+<section><div class="section-title"><small>GET STARTED</small><h2>How To Connect</h2><p>Official channel এবং bot ব্যবহার করে platform-এর সাথে connect করার simple process।</p></div>
+<div class="grid"><div class="glass step"><div class="num">01</div><h3>Join Channel</h3><p>Official Telegram channel join করো এবং latest announcements দেখো।</p></div><div class="glass step"><div class="num">02</div><h3>Open Bot</h3><p>Official SM OTP WORK bot open করে available instructions follow করো।</p></div><div class="glass step"><div class="num">03</div><h3>Start Working</h3><p>Bot-এর official instructions অনুযায়ী available work process শুরু করো।</p></div></div></section>
+
+<section id="contact"><div class="section-title"><small>CONTACT US</small><h2>Official Contacts</h2><p>শুধুমাত্র আমাদের official links ব্যবহার করে যোগাযোগ করো।</p></div>
+<div class="grid"><div class="glass contact"><div class="icon">📢</div><h3>Official Channel</h3><a href="https://t.me/mmteme247open" target="_blank" rel="noopener">JOIN OFFICIAL CHANNEL</a></div>
+<div class="glass contact"><div class="icon">🤖</div><h3>Official Bot</h3><a href="https://t.me/SM_OTP_WORK_bot" target="_blank" rel="noopener">@SM_OTP_WORK_bot</a></div>
+<div class="glass contact"><div class="icon">🛠️</div><h3>Support</h3><a href="https://t.me/Mmteam247" target="_blank" rel="noopener">@Mmteam247</a><br><br><a href="https://t.me/S_pro_75" target="_blank" rel="noopener">@S_pro_75</a></div></div></section>
+
+<section class="cta"><h2>READY TO START?</h2><p>Official channel follow করো, latest updates দেখো এবং official bot-এর মাধ্যমে available workflow সম্পর্কে জানো।</p><div class="buttons"><a class="btn primary" href="https://t.me/SM_OTP_WORK_bot" target="_blank" rel="noopener">🤖 OPEN BOT</a><a class="btn outline" href="https://t.me/mmteme247open" target="_blank" rel="noopener">📢 JOIN CHANNEL</a></div></section>
+
+<footer><strong>SM <span>OTP</span> WORK</strong><div class="flinks"><a href="#home">Home</a><a href="#about">About</a><a href="#features">Features</a><a href="#system">System</a><a href="#contact">Contact</a></div><p>© 2026 SM OTP WORK — All Rights Reserved.</p></footer>
+
+</body>
+</html>
